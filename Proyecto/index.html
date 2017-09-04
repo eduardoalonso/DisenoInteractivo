@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Proyecto Clase</title>
-        <meta charset="UTF-8">
-        <link href="css/style.css" rel="stylesheet">
+      <title>Proyecto Clase</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-        <h1>Inicio proyecto</h1>
+        <h1>Agenda del proyecto</h1>
+        <h3>Problematica de musicos para realizar musica para television, peliculas, comerciales.</h3>
+        <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Septiembre</a></li>
+          <li class="tabs-title"><a href="#panel2">Octubre</a></li>
+          <li class="tabs-title"><a href="#panel3">Noviembre</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <ol>
+              <h5>Actividades</h5>
+              <li>Entrevistar minimo a tres musicos.</li>
+              <li>Buscar entrevistas con alguna empresa grande.</li>
+              <li>Hablar con escuelas sobre si han intentado hacer una plataforma.</li>
+              <li>Buscar problemas legales, contratos, regalias, etc.</li>
+              <li>Pedir opiniones y dar a conocer la idea en la que nos gustaria trabajar.</li>
+              <li>Una vez definido el problema, empezar en la solucion</li>
+              <p><span style="color:red">Se modificará y se agregaran actividades durante el avance del proyecto.</span></p>
+            </ol>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <h5>Actividades</h5>
+            <h3>Coming soon...</h3>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <h5>Actividades</h5>
+            <h3>Coming soon...</h3>
+          </div>
+        </div>
+        <p>
+            
+        </p> 
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Retroalimentación</th>
+              <th>Informacion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1</td>
+              <td>
+                Primero enfocarse en las empresas buscando el servicio, si realmente ocupan esa solución. Buscar otras alternativas. Buscar plataformas con ideas similares 
+                que ya se usan en el medio. ¿Que les falta?, ¿Que tienen de bueno?, ¿Son utiles?, ¿Si se usan?.
+              </td>
+            </tr>
+            <tr>
+              <td>#2</td>
+              <td>
+                Como segunda retroalimentacion, hicieron que nos dieramos cuenta que seria muy dificil para una empresa, ver todas las propuestas de los musicos. Nos dieron
+                la recomendacion de que cada músico puediera poner cierta cantidad de demos, asi las compañias buscarian a través de un filtro y perfil. Tambien nos ayudaron
+                con la idea de un sistema de rating.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+
+
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
     </body>
 </html>

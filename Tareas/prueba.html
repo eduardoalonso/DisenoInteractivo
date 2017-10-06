@@ -4,9 +4,26 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        
     </head>
     <body>
-    
+        <script src="foundation-6.4.2/js/vendor/jquery.js"></script>
+        <script>
+            $.ajax({
+                url:'https://api.openaq.org/v1/countries',
+                success: function(result){
+                    console.log(result.results);
+                    $("#otro").click(function(){
+                        alert("Ya funcionó!");
+                    });
+                    $("#Mexico").click(function(){
+                        alert("Por fin!");
+                    });
+                }          
+            });
+        </script>
+        <p id="otro">parte</p>
+        <p id="Mexico">Esto es un segundo texto.</p>
+        <p id="Canada">Tercer texto.</p>
     </body>
 </html>
